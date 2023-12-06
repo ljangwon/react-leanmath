@@ -11,3 +11,9 @@ services:
     env_file:
       - ./.env.local
 # 실행명령 docker-compose -f docker-compose-dev.yml up -d --build
+
+# npx create-react-app react-leanmath
+# npm start
+
+# git remote add origin https://github.com/ljangwon/react-leanmath.git
+# git push --set-upstream origin master 
