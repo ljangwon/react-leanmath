@@ -1,0 +1,14 @@
+# .dockerignore
+node_modules
+Dockerfile
+Dockerfile.dev
+Dockerfile.pro
+.git
+.gitignore
+.dockerignore
+.env
+.env.local
+docker-compose-backup.yml
+docker-compose-dev.yml
+docker-compose-pro.yml
+docker-compose.yml

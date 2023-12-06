@@ -1,0 +1,13 @@
+version: '3'
+services:
+  react-app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '4000:3000'
+    volumes:
+      - ./src:/app/src:ro
+    env_file:
+      - ./.env.local
+# 실행명령 docker-compose -f docker-compose-dev.yml up -d --build
