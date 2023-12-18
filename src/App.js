@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 // Pages
-import MainPage from './component/page/MainPage';
-import PostWritePage from './component/page/PostWritePage';
-import PostViewPage from './component/page/PostViewPage';
+import StudentListPage from './component/page/StudentListPage';
+import StudentWritePage from './component/page/StudentWritePage';
+import StudentViewPage from './component/page/StudentViewPage';
 
 const MainTitleText = styled.p`
 	font-size: 24px;
@@ -15,11 +15,11 @@ const MainTitleText = styled.p`
 function App(props) {
 	return (
 		<BrowserRouter>
-			<MainTitleText>LeanERP-Dev</MainTitleText>
+			<MainTitleText>Student List</MainTitleText>
 			<Routes>
-				<Route index element={<MainPage />} />
-				<Route path='post-write' element={<PostWritePage />} />
-				<Route path='post/:postId' element={<PostViewPage />} />
+				<Route index element={<StudentListPage />} />
+				<Route path='student-write' element={<StudentWritePage />} />
+				<Route path='student/:studentId' element={<StudentViewPage />} />
 			</Routes>
 		</BrowserRouter>
 	);
