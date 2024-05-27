@@ -15,7 +15,7 @@ const MainTitleText = styled.p`
 function App(props) {
 	return (
 		<BrowserRouter>
-			<MainTitleText>Student List</MainTitleText>
+			<MainTitleText>Student List1</MainTitleText>
 			<Routes>
 				<Route index element={<StudentListPage />} />
 				<Route path='student-write' element={<StudentWritePage />} />

@@ -15,7 +15,7 @@ const MainTitleText = styled.p`
 function App(props) {
 	return (
 		<BrowserRouter>
-			<MainTitleText>Post List</MainTitleText>
+			<MainTitleText>Post List1</MainTitleText>
 			<Routes>
 				<Route index element={<MainPage />} />
 				<Route path='post-write' element={<PostWritePage />} />
